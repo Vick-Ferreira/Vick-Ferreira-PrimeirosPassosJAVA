@@ -33,12 +33,22 @@ public class ArrayMediaPares {
 		
 		
 		for(int i=0; i<n; i++) {
+			
+				soma = soma + vetor[i]; 
+				numeroPares++;
+				
+				System.out.println(numeroPares);
+			
+		}
+		
+		for(int i=0; i<n; i++) {
 			if(vetor[i] % 2 == 0) {
 				soma = soma + vetor[i]; //pegando apenas numeros pares e somando 
 				numeroPares++;
 			}
 			
 		}
+
 		
 		if(numeroPares == 0) {
 			System.out.println("NENHUM NUMERO PAR");
